@@ -37,11 +37,11 @@ function Store({paymentProcessor, dai}) {
         <ul className='list-group'>
             <li className='list-group-item'>
                 Buy item1 - <span className='front-weight-bold'>100 DAI</span>
-                <button type='button' className='btn btn-primary float-right' onClick={() => ByteLengthQueuingStrategy(ITEMS[0])}>Buy</button>
+                <button type='button' className='btn btn-primary float-right' onClick={() => buy(ITEMS[0])}>Buy</button>
             </li>
             <li className='list-group-item'>
                 Buy item2 - <span className='front-weight-bold'>200 DAI</span>
-                <button type='button' className='btn btn-primary float-right' onClick={() => ByteLengthQueuingStrategy(ITEMS[1])}>Buy</button>
+                <button type='button' className='btn btn-primary float-right' onClick={() => buy(ITEMS[1])}>Buy</button>
             </li>
         </ul>
     );
