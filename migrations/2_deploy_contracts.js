@@ -5,7 +5,7 @@ module.exports = async function (deployer, network, addresses) {
     const [admin, payer, _] = addresses;
     if(network === 'develop') {
         await deployer.deploy(Dai); // send the transection
-        const dai = await Dai.deloyed(); // wait for the transaction to be mined
+        const dai = await Dai.deployed(); // wait for the transaction to be mined
         await dai.faucet(payer, web3.utils.toWei('10000')); // create some token for the payer
         // 1 DAI token = 1 * 10 * 18 dai Wei
         // 1 Ether = 1 * 10 * 18 ether Wei
